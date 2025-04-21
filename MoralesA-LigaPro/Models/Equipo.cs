@@ -22,7 +22,7 @@ namespace MoralesA_LigaPro.Models
         public int Puntos { 
             get 
             {
-                int puntos= PartidosGanados * 3 + PartidosEmpatados*1;
+                int puntos= PartidosGanados*3 + PartidosEmpatados*1;
                 return puntos;
             }
         }
