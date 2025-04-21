@@ -1,8 +1,60 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Home Page";
 }
 
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bienvenido</h1>
 </div>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active div_imagen">
+            <img src="~/Imagenes/images.jpeg" class="d-block w-100 imagen" alt="Logo">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Logo</h5>
+                <p id="leyenda">El escudo que une pasiones y divide amistades</p>
+            </div>
+        </div>
+        <div class="carousel-item div_imagen">
+            <img src="~/Imagenes/images (1).jpeg" class="d-block w-100 imagen" alt="Primera">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Liga De Quito</h5>
+                <p id="leyenda">Un clásico que siempre deja algo que gritar</p>
+            </div>
+        </div>
+        <div class="carousel-item div_imagen">
+            <img src="~/Imagenes/channels4_profile.jpg" class="d-block w-100 imagen" alt="Segunda">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Barcelona</h5>
+                <p id="leyenda">Un gol, mil emociones</p>
+            </div>
+        </div>
+        <div class="carousel-item div_imagen">
+            <img src="~/Imagenes/fondo-escritorio-emelec-6.jpg" class="d-block w-100 imagen" alt="Tercera">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Emelec</h5>
+                <p id="leyenda">El único que corre más que el balón... y se lleva más insultos</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+}

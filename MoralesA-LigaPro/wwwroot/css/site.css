@@ -20,3 +20,30 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.div_imagen {
+    height: 700px;
+    overflow: hidden;
+}
+
+.imagen {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: #f0f8ff; /* Cambia este color a lo que desees */
+    color: #333; /* Color del texto, opcional */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #4a90e2; /* color de fondo */
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
