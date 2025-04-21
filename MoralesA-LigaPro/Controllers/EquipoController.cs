@@ -15,7 +15,7 @@ namespace MoralesA_LigaPro.Controllers
                 Nombre = "LDU",
                 PartidosJugados = 10,
                 PartidosGanados = 10,
-                PartidosEmpatados = 10,
+                PartidosEmpatados = 0,
                 PartidosPerdidos = 0,
             };
             equipos.Add(ldu);
